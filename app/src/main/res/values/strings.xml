@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Medium Unlocker</string>
+    <string name="clear_cookies_msg">If you have logged in your medium account within this app, this will logout your account. Use this if you are facing login issues.</string>
+</resources>
