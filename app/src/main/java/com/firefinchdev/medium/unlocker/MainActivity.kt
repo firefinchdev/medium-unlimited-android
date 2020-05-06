@@ -69,10 +69,7 @@ class MainActivity : AppCompatActivity() {
 //            cacheMode = WebSettings.LOAD_NO_CACHE
 //            setAppCacheEnabled(false)
         }
-    }
 
-    override fun onResume() {
-        super.onResume()
         when (intent?.action) {
             Intent.ACTION_SEND -> {
                 if ("text/plain" == intent.type) {
@@ -90,6 +87,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         return true
+    }
+
+    override fun onBackPressed() {
+        if (webView.canGoBack()) {
+            webView.goBack()
+            return
+        }
+        super.onBackPressed()
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
