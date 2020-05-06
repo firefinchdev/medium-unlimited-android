@@ -76,8 +76,11 @@ class MainActivity : AppCompatActivity() {
         when (intent?.action) {
             Intent.ACTION_SEND -> {
                 if ("text/plain" == intent.type) {
-                    url = getUrlFromIntent(intent) ?: FALLBACK_URL
+                    url = getUrlFromIntentSend(intent) ?: FALLBACK_URL
                 }
+            }
+            Intent.ACTION_VIEW -> {
+                url = getUrlFromIntentView(intent) ?: FALLBACK_URL
             }
             else -> url = FALLBACK_URL
         }
@@ -108,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun getUrlFromIntent(intent: Intent): String? {
+    private fun getUrlFromIntentSend(intent: Intent): String? {
         var returnUrl: String? = null
         intent.getStringExtra(Intent.EXTRA_TEXT)?.let { text ->
             val matcher = PatternsCompat.WEB_URL.matcher(text)
@@ -121,6 +124,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return returnUrl
+    }
+
+    private fun getUrlFromIntentView(intent: Intent): String? {
+        return intent.data.toString()
     }
 
     private fun clearCookies() {

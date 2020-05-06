@@ -22,6 +22,48 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
             </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="medium.com" android:scheme="https"/>
+                <data android:host="medium.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="medium"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link.medium.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.medium.com" android:scheme="https"/>
+                <data android:host="gay.medium.com" android:scheme="https"/>
+                <data android:host="modus.medium.com" android:scheme="https"/>
+                <data android:host="zora.medium.com" android:scheme="https"/>
+                <data android:host="gen.medium.com" android:scheme="https"/>
+                <data android:host="forge.medium.com" android:scheme="https"/>
+                <data android:host="tenderly.medium.com" android:scheme="https"/>
+                <data android:host="marker.medium.com" android:scheme="https"/>
+                <data android:host="level.medium.com" android:scheme="https"/>
+                <data android:host="coronavirus.medium.com" android:scheme="https"/>
+                <data android:host="blog.medium.com" android:scheme="https"/>
+                <data android:host="onezero.medium.com" android:scheme="https"/>
+                <data android:host="humanparts.medium.com" android:scheme="https"/>
+                <data android:host="heated.medium.com" android:scheme="https"/>
+                <data android:host="betterhumans.medium.com" android:scheme="https"/>
+                <data android:host="thebolditalic.medium.com" android:scheme="https"/>
+                <data android:host="towardsdatascience.com" android:scheme="https"/>
+                <data android:host="elemental.medium.com" android:scheme="https"/>
+            </intent-filter>
         </activity>
     </application>
 
