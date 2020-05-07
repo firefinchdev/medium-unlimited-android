@@ -2,6 +2,8 @@
 
 Android app to unlock the articles behind the membership wall.
 
+For desktop (chrome/firefox extension), <a href="https://github.com/manojVivek/medium-unlimited">click here</a>.
+
 ## Usage
 
 1. Click the star on top of page.
