@@ -1,4 +1,4 @@
-# Medium Unlimited - Android
+# Medium Unlimited for Android
 
 Android app to unlock the articles behind the membership wall.
 
