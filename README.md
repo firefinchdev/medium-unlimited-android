@@ -9,7 +9,7 @@ For desktop (chrome/firefox extension), <a href="https://github.com/manojVivek/m
 1. Click the star on top of page.
 2. Go to <a href="https://github.com/firefinchdev/medium-unlimited-android/releases">releases</a> and <a href="https://github.com/firefinchdev/medium-unlimited-android/releases/latest/download/app-release.apk">download</a> latest apk.
 3. Install and open app. Login with your medium account.
-4. Enjoy unlocking.
+4. Enjoy unlocking. See below.
 
 ## Unlocking
 To unlock, you can either click on a article hyperlink to open it with this app or share the article from the official app to this app.
